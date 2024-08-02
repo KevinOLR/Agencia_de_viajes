@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos-Andes Summit Adventures</title>
+    <link href="../Estilos/estilo_inicio.css" rel="stylesheet">
+    <!--Añadiremos las tipografías que nos faltan-->
+    <!--Monserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="inicio_cabecera">
+                <a href="Inicio.html"><img class="inicio_logo_1" src="../Imagenes/MARCA/logo_empresa.png" alt="logo"></a>
+                <p class="title">Andes Summit Adventures&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Agencia de
+                    viajes peruana</p>
+            </div>
+        </header>
+        <section>
+            <div class="inicio_banner">
+                <img src="../Imagenes/Inicio/banner_2.jpg" alt="banner">
+
+                <div class="inicio_cta">
+                    <h1> !AVENTÚRATE A LOS MAJESTUOSOS NEVADOS DEL PERÚ! <BR> <strong>RESERVA AQUÍ</strong> </h1>
+                </div>
+            </div>
+
+        </section>
+        <nav>
+            <ul>
+                <a href="../Páginas/Inicio.html">Inicio</a>
+                <a href="../Páginas/destinos.html">Destinos</a>
+                <a href="../Páginas/preguntas_frecuentes.html">Preguntas frecuentes</a>
+                <a href="../Páginas/nosotros.html">Nosotros</a>
+            </ul>
+        </nav>
+        <main>
+            <div class="separador">
+                <hr>
+            </div>>
+            <h2 class="title_section_3">Conoce los mejores <strong>DESTINOS</strong> de escalada del Perú :</h2>
+            <section class="section_3">
+                <div class="section_3_destino">
+                    <h2 class="title_section_3_destino"> Huascarán 05 DIAS | 06 NOCHES</h2>
+                    <img src="../Imagenes/Inicio/destino_huascaran_pequeno.png">
+                    <h2 class="section_3_button"><a href="../Páginas/destino_huascarán.html" style="color: white;">Conoce más</a></h2>
+
+                </div>
+                <div class="section_3_destino">
+                    <h2 class="title_section_3_destino"> Salkantay 05 DIAS | 06 NOCHES</h2>
+                    <img src="../Imagenes/Inicio/destino_salkantay_pequeno.jpg">
+                    <h2 class="section_3_button"><a href="../Páginas/destino_salkantay.html" style="color: white;">Conoce más</a></h2>
+                </div>
+                <div class="section_3_destino">
+                    <h2 class="title_section_3_destino"> San Mateo 05 DIAS | 06 NOCHES</h2>
+                    <img src="../Imagenes/Inicio/destino_sanmateo_pequeno.jpg">
+                    <h2 class="section_3_button"><a href="../Páginas/destino_san_mateo.html" style="color: white;">Conoce más</a></h2>
+                </div>
+            </section>
+            <section class="section_4">
+                <div class="box_testimonio">
+                    <div class="box_testimonio_text">
+                        <h2>Huascarán</h2>
+                        <img class="testimonio_stars" src="../Imagenes/MARCA/puntuacion.png">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-rIPPUiwYNQ?si=xIwkd-sXhe00qpVo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <!--Aquí colocar un iframe-->
+                    
+                </div>
+            </section>
+            <section class="section_4">
+                <div class="box_testimonio">
+                    <div class="box_testimonio_text">
+                        <h2>Salkantay</h2>
+                        <img class="testimonio_stars" src="../Imagenes/MARCA/puntuacion.png">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wftLxpMXkmE?si=WtV5BK_VLZSqIb8q" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="section_4">
+                <div class="box_testimonio">
+                    <div class="box_testimonio_text">
+                        <h2>San Mateo</h2>
+                        <img class="testimonio_stars" src="../Imagenes/MARCA/puntuacion.png">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/T7ovADEWUzk?si=uMYDBKLmVu37kRhN" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <h2 class="title_section_5">Solicita tu cotización<strong> aquí </strong>:</h2>
+            <section class="section_5" id="section_5">
+                <form action="{{ url_for('cotizacion') }}" method="POST">
+                    <h2>Solicitud de Cotización</h2>
+                    <div class="form-group">
+                        <label for="nombre">Nombres y Apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="destino">Destino:</label>
+                        <select id="destino" name="destino" required>
+                            <option value="">Seleccione el destino</option>
+                            <option value="Huascarán">Huascarán</option>
+                            <option value="Salkantay">Salkantay</option>
+                            <option value="San Mateo">San Mateo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_salida">Fecha de salida:</label>
+                        <input type="date" id="fecha_salida" name="fecha_salida" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_regreso">Fecha de regreso:</label>
+                        <input type="date" id="fecha_regreso" name="fecha_regreso" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="num_adultos">Número de adultos:</label>
+                        <input type="number" id="num_adultos" name="num_adultos" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="num_niños">Número de niños:</label>
+                        <input type="number" id="num_niños" name="num_niños" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios adicionales:</label>
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="55"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los <a href="#">términos y condiciones</a></label>
+                    </div>
+                    <div class="form-group">
+                        <input class="boton_enviar" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </section>
+            
+        </main>
+        <footer>
+            <div class="inicio_footer_1">
+                <h2>Datos Contacto</h2>
+                <p>Teléfono: +51 123 456 789<br>
+                    Correo electrónico: info@andessummitadventures.com<br>
+                    Dirección: Avenida de los Viajeros, 123, Miraflores, Lima, Perú<br>
+                    Horario de atención:<br>
+
+                    Lunes a Viernes: 9:00 AM - 6:00 PM<br>
+                    Sábados: 10:00 AM - 4:00 PM<br>
+                    Domingos: Cerrado</p>
+            </div>
+            <div class="inicio_footer_2">
+                <img src="../Imagenes/MARCA/marca_registrada.png" alt="marca_registrada">
+                <img src="../Imagenes/MARCA/MINCETUR.png" alt="mincetur">
+                <p>Agencia oficializada por MINCETUR</p>
+            </div>
+
+            <div class="inicio_footer_3">
+                <h2 class="footer_3_txt">Redes sociales</h2>
+                <div class="footer_3_img">
+                    <a href="#" target="_blank"><img src="../Imagenes/MARCA/tripadvisor.png"></a>
+                    <a href="#" target="_blank"><img src="../Imagenes/MARCA/FB.png"></a>
+                    <a href="#" target="_blank"><img src="../Imagenes/MARCA/ig.png"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="flotante">
+        <a href="https://wa.link/8waezx" target="_blank"><img src="../Imagenes/MARCA/Whatsapp_logo.webp"></a>
+    </div>
+</body>
+
+</html>

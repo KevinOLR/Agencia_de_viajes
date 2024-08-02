@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 45%;
+    padding: 20px;
+}
+
+.mission-vision-values {
+    background-color: #f2f2f2;
+}
+
+.team {
+    background-color: #e0e0e0;
+}
+
+.team-member {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.team-member img {
+    max-width: 50%;
+    border: 1px solid #ccc;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+    
+}
+
+/* Define el estilo de la lista ul */
+.checklist {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Define el estilo de los elementos li */
+.checklist li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del check */
+.checklist li::before {
+    content: '\2713'; /* Código Unicode para el símbolo de checkmark (✓) */
+    color: #27AE60; 
+    font-size: 20px; 
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+/*Estilo de la lista ol */
+.circled-list {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+/*Estilo de los elementos li */
+.circled-list li {
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 10px;
+}
+
+/* Estilo del número con círculo alrededor */
+.circled-list li::before {
+    content: counter(li); 
+    counter-increment: li;
+    color: #007BFF;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    border: 2px solid #007BFF;
+    border-radius: 50%; 
+    width: 20px;
+    height: 20px;
+    text-align: center; 
+}
+
+/*Experincia*/
+
+.rectangulo-largo {
+    width: 98.7%;
+    height: 80px;
+    background-color: #2C3E50;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.rectangulo-pequeno {
+    flex: 1;
+    background-color: #FFF;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+
+.flotante img {
+    position: fixed;
+    right: 5px;
+    width: 70px;
+    height: 70px;
+    top: 80%;
+}
